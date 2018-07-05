@@ -1,0 +1,26 @@
+<table border="1"
+cellpadding="20">
+<tr>
+    <th>宿主机IP</th>
+    <th>虚机名称</th>
+    <th>虚机IP</th>
+    <th>虚机状态</th>
+    <th>start</th>
+    <th>stop</th>
+    <th>reboot</th>
+    <th>suspend</th>
+</tr>
+{% for info in vm_info %}
+<tr>
+    <td>{{ info.host_ip }}</td>
+    <td>{{ info.vm_name }}</td>
+    <td>{{ info.int_ip }}</td>
+    <td>{{ info.vm_status }}</td>
+    <td>button</td>
+    <td>button</td>
+    <td>button</td>
+    <td>button</td>
+</tr>
+{% endfor %}
+</table>
+
