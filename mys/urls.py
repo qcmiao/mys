@@ -20,4 +20,8 @@ from my import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.vmviewer),
+#    url(r'^shutdown/$', views.destroy),
+#    url(r'^start/$', views.start),
+    url(r'^suspend/$', views.suspend),
+#    url(r'^reboot/$', views.reboot),
 ]

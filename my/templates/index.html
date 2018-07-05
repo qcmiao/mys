@@ -16,10 +16,26 @@ cellpadding="20">
     <td>{{ info.vm_name }}</td>
     <td>{{ info.int_ip }}</td>
     <td>{{ info.vm_status }}</td>
-    <td>button</td>
-    <td>button</td>
-    <td>button</td>
-    <td>button</td>
+    <td>
+        <form action="/start/" method="get">
+            <input type="submit" value="start" />
+        </form>
+    </td>
+    <td>
+        <form action="/stop/" method="get">
+            <input type="submit" value="stop" />
+        </form>
+    </td>
+    <td>
+        <form action="/reboot/" method="get">
+            <input type="submit" value="reboot" />
+        </form>
+    </td>
+    <td>
+        <form action="/suspend/" method="get">
+            <input type="submit" value="suspend" />
+        </form>
+    </td>
 </tr>
 {% endfor %}
 </table>
